@@ -10,7 +10,7 @@ public class Person {
     private final StringProperty lastName;
     private final StringProperty street;
     private final IntegerProperty postalCode;
-    private final StringProperty city;
+    private final IntegerProperty city;
 
     public Person() {
         this(null, null);
@@ -22,7 +22,7 @@ public class Person {
 
         this.street = new SimpleStringProperty("ulica");
         this.postalCode = new SimpleIntegerProperty(12345);
-        this.city  = new SimpleStringProperty("łódź");
+        this.city  = new SimpleIntegerProperty(0);
 
     }
 
@@ -74,15 +74,15 @@ public class Person {
         return postalCode;
     }
 
-    public String getCity() {
+    public int getCity() {
         return city.get();
     }
 
-    public void setCity(String city) {
+    public void setCity(int city) {
         this.city.set(city);
     }
 
-    public StringProperty cityProperty() {
+    public IntegerProperty cityProperty() {
         return city;
     }
 }

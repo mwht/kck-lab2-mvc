@@ -65,8 +65,8 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" text="New" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Edit" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="25.0" prefWidth="53.0" text="New" />
+                        <Button mnemonicParsing="false" onAction="#handleEditPerson" prefHeight="25.0" prefWidth="56.0" text="Edit" GridPane.columnIndex="1" />
                         <Button mnemonicParsing="false" onAction="#handleDeletePerson" prefHeight="25.0" prefWidth="58.0" text="Delete" GridPane.columnIndex="2" />
                      </children>
                   </GridPane>
