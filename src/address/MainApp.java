@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 public class MainApp extends Application {
 
     private ObservableList<Person> personData = FXCollections.observableArrayList();
+    private Stage primaryStage;
 
     public MainApp() {
         personData.add(new Person("Hans", "Muster"));
@@ -71,5 +72,10 @@ public class MainApp extends Application {
         rootBorderPane.setCenter(personOverview);
         primaryStage.setScene(new Scene(rootBorderPane));
         primaryStage.show();
+        this.primaryStage = primaryStage;
+    }
+
+    public Stage getPrimaryStage() {
+        return primaryStage;
     }
 }
